@@ -1,0 +1,68 @@
+# Nome do seu workflow
+name: 🚀 Deploy para Servidor FTP
+
+# Define quando o workflow deve rodar
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  # Nome do job
+  deploy-ftp:
+    # O tipo de máquina que o job vai rodar
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Checkout do código
+      # Esta etapa baixa o código do seu repositório para a máquina virtual do GitHub
+      - name: 1. 🚚 Checkout do Repositório
+        uses: actions/checkout@v4
+        with:
+          # Garante que estamos baixando todo o histórico (necessário para alguns builds)
+          fetch-depth: 0
+
+      # (Opcional) Adicione etapas de build aqui
+      # Se você usa Node.js, PHP Composer, etc., rode os comandos de build ANTES do deploy.
+      # Exemplo para Node.js:
+      # - name: 2. 🔨 Build do Projeto (Exemplo Node.js)
+      #   run: |
+      #     npm install
+      #     npm run build
+
+      # (Opcional) Exemplo para PHP Composer:
+      # - name: 2. 🔨 Instalar dependências (Exemplo PHP Composer)
+      #   run: composer install --no-dev --optimize-autoloader
+
+      # 3. Deploy dos arquivos via FTP
+      - name: 3. 📤 Deploy via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          # O endereço do seu servidor FTP (sem ftp://)
+          server: ${{ secrets.FTP_SERVER }}
+
+          # O seu nome de usuário do FTP
+          username: ${{ secrets.FTP_USERNAME }}
+
+          # A sua senha do FTP
+          password: ${{ secrets.FTP_PASSWORD }}
+
+          # O diretório local que você quer enviar.
+          # '.' significa a raiz do repositório.
+          # Se você tiver um build, pode ser './dist' ou './build'
+          local-dir: ./
+
+          # O diretório de destino no servidor FTP.
+          # (Ex: /public_html/, /www/, /httpdocs/, /meu-app/)
+          # server-dir: /public_html/
+          server-dir: ${{ secrets.FTP_FOLDER_MAIN }}
+
+          # (Opcional) Excluir arquivos e pastas do envio.
+          # Muito útil para não enviar a pasta .git, node_modules, etc.
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/.github/**
+            **/node_modules/**
+            .env
+            .gitignore
