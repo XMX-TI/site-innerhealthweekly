@@ -1,0 +1,834 @@
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="shortcut icon" href="assets/img/fav.webp" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Garaherb</title>
+
+    <script
+      type="text/javascript"
+      src="https://assets.mycartpanda.com/cartx-ecomm-ui-assets/js/cpsales.js"
+    ></script>
+
+    <link rel="stylesheet" href="assets/css/kits.css" />
+
+    <!-- inicio vturb -->
+    <script>
+      !(function (i, n) {
+        i._plt =
+          i._plt || (n && n.timeOrigin ? n.timeOrigin + n.now() : Date.now());
+      })(window, performance);
+    </script>
+    <link
+      rel="preload"
+      href="https://scripts.converteai.net/bff5868f-b8e9-4bb4-af45-52d9b7681a6e/players/690bb13d22ce52d5d4b1a525/v4/player.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="https://scripts.converteai.net/lib/js/smartplayer-wc/v4/smartplayer.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="https://cdn.converteai.net/bff5868f-b8e9-4bb4-af45-52d9b7681a6e/690baeeda187d80a470b9349/main.m3u8"
+      as="fetch"
+    />
+    <link rel="dns-prefetch" href="https://cdn.converteai.net" />
+    <link rel="dns-prefetch" href="https://scripts.converteai.net" />
+    <link rel="dns-prefetch" href="https://images.converteai.net" />
+    <link rel="dns-prefetch" href="https://api.vturb.com.br" />
+    <!-- fim vturb -->
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      [data-delay] {
+        display: none;
+      }
+      @media (max-width: 900px) {
+        .products .product {
+          flex-direction: column !important;
+        }
+      }
+
+      .area-kits .title {
+        color: #62001b;
+      }
+
+      .cpd-ribbon,
+      div#cpd-NaN {
+        display: none;
+      }
+    </style>
+
+    <script>
+      let already_runned = false;
+      function getParams() {
+        return new URLSearchParams(window.location.search).toString();
+      }
+      document.addEventListener("DOMContentLoaded", function () {
+        if (!already_runned) {
+          already_runned = true;
+          let params = getParams();
+          if (params) {
+            document.querySelectorAll("a").forEach(function (e) {
+              if (e.href) {
+                if (e.href.includes("?")) {
+                  e.href += "&" + params;
+                } else {
+                  e.href += "?" + params;
+                }
+              }
+            });
+          }
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <header class="container">
+      <span>
+        You and a few others near
+        <strong class="regiao" id="cidade"></strong> have been selected to see
+        this!
+      </span>
+    </header>
+    <main>
+      <div class="container">
+        <h1><strong>INCREASE YOUR VOLUME!</strong></h1>
+        <h2>
+          <svg
+            width="20"
+            height="19"
+            viewBox="0 0 16 14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="st-current"
+          >
+            <path
+              d="M13.1592 13.7115C14.061 12.8123 14.7761 11.7437 15.2636 10.5671C15.751 9.39058 16.0012 8.1293 15.9996 6.85577C16.0012 5.58225 15.751 4.32097 15.2636 3.14443C14.7761 1.96788 14.061 0.899268 13.1592 0L12.3516 0.806495C13.1472 1.59997 13.7783 2.54288 14.2084 3.58102C14.6385 4.61916 14.8591 5.73207 14.8577 6.85577C14.8577 9.21822 13.8995 11.3571 12.3516 12.9051L13.1592 13.7115Z"
+              fill="#60001A"
+            ></path>
+            <path
+              d="M11.5458 12.0986C12.2353 11.4109 12.7822 10.5937 13.1549 9.69395C13.5276 8.79422 13.7189 7.8297 13.7177 6.85582C13.7189 5.88194 13.5276 4.91743 13.1549 4.0177C12.7822 3.11797 12.2353 2.30076 11.5458 1.61304L10.7393 2.41953C11.3227 3.00147 11.7854 3.69297 12.1008 4.45429C12.4162 5.21562 12.578 6.03176 12.577 6.85582C12.5783 7.68 12.4167 8.49631 12.1016 9.25783C11.7864 10.0194 11.3238 10.7111 10.7404 11.2933L11.5458 12.0986Z"
+              fill="#60001A"
+            ></path>
+            <path
+              d="M8.79159 11.0554C9.26896 10.5793 9.64754 10.0135 9.90556 9.39055C10.1636 8.76763 10.2959 8.09986 10.2951 7.42561C10.2959 6.75137 10.1636 6.0836 9.90556 5.46068C9.64754 4.83776 9.26896 4.27197 8.79159 3.79582L7.9851 4.60231C8.35638 4.97267 8.65082 5.41276 8.85148 5.89728C9.05214 6.38179 9.15506 6.90119 9.15434 7.42561C9.155 7.95003 9.05205 8.46941 8.85139 8.95392C8.65074 9.43843 8.35633 9.87852 7.9851 10.2489L8.79159 11.0554ZM6.52154 2.34938C6.61817 2.39593 6.69972 2.46878 6.75683 2.55958C6.81393 2.65038 6.84427 2.75544 6.84437 2.8627V11.9885C6.84421 12.0959 6.81378 12.201 6.75657 12.2918C6.69936 12.3826 6.61769 12.4554 6.52094 12.5019C6.4242 12.5483 6.3163 12.5665 6.20966 12.5544C6.10302 12.5423 6.00196 12.5004 5.9181 12.4334L3.22256 10.2774H0.570364C0.419094 10.2774 0.27402 10.2173 0.167056 10.1104C0.0600917 10.0034 0 9.85834 0 9.70707V5.14416C0 4.99289 0.0600917 4.84781 0.167056 4.74085C0.27402 4.63389 0.419094 4.57379 0.570364 4.57379H3.22256L5.9181 2.41782C6.00202 2.35073 6.10319 2.30871 6.20995 2.2966C6.31671 2.28449 6.42472 2.30279 6.52154 2.34938Z"
+              fill="#60001A"
+              class=""
+            ></path></svg
+          >Please check if the sound is on.
+        </h2>
+
+        <vturb-smartplayer
+          id="vid-690bb13d22ce52d5d4b1a525"
+          style="display: block; margin: 0 auto; width: 100%; max-width: 400px"
+        ></vturb-smartplayer>
+        <script type="text/javascript">
+          var s = document.createElement("script");
+          (s.src =
+            "https://scripts.converteai.net/bff5868f-b8e9-4bb4-af45-52d9b7681a6e/players/690bb13d22ce52d5d4b1a525/v4/player.js"),
+            (s.async = !0),
+            document.head.appendChild(s);
+        </script>
+      </div>
+    </main>
+
+    <div data-delay>
+      <section class="area-kits smartplayer-scroll-event pd" id="kits">
+        <div class="container">
+          <h2 class="title">Order Your Garaherb</h2>
+          <p>Choose Your Package - Buy More &amp; Save More</p>
+
+          <ul>
+            <li class="kit-option k1">
+              <a href="https://garaherb.mycartpanda.com/checkout/193383598:1">
+                <div class="header">GOOD VALUE</div>
+
+                <div class="main">
+                  <strong>2 BOTTLES</strong>
+                  <span class="days">60 Day Supply</span>
+                  <div class="area-img">
+                    <img src="assets/img/mockup_2.webp" alt="2 Bottles" />
+                  </div>
+                </div>
+
+                <div class="footer">
+                  <div class="price"><strong>$89</strong> / bottle</div>
+                  <div class="regular-price">Regular: <s>$179</s></div>
+
+                  <button class="button">
+                    <img src="assets/img/button.png" alt="Order Now" />
+                  </button>
+                  <img
+                    src="assets/img/cards.png"
+                    alt="Credit Cards"
+                    class="bandeiras"
+                  />
+
+                  <div class="valores">
+                    <span>Total = $158</span>
+                    <small>+ $9.99 Shipping</small>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li class="kit-option best-option">
+              <a href="https://garaherb.mycartpanda.com/checkout/193383600:1">
+                <div class="header" style="background: #000">BEST VALUE</div>
+
+                <div class="main">
+                  <strong>6 BOTTLES</strong>
+                  <span class="days">180 Day Supply</span>
+                  <div class="area-img">
+                    <img src="assets/img/6.png" alt="6 Bottles" />
+                    <div class="save" style="left: 0; top: 0">
+                      <b
+                        >Save <br />
+                        $780</b
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="footer">
+                  <div class="price"><strong>$49</strong> / bottle</div>
+                  <div class="regular-price">Regular: <s>$1074</s></div>
+                  <ul>
+                    <li style="color: #0b7135">
+                      <span style="background-color: #0b7135">✓</span>2 FREE
+                      BONUS!
+                    </li>
+                    <li style="color: #62001b">
+                      <span style="background-color: #62001b">✓</span>FREE
+                      SHIPPING!
+                    </li>
+                  </ul>
+                  <button class="button">
+                    <img src="assets/img/button.png" alt="Order Now" />
+                  </button>
+
+                  <img
+                    src="assets/img/cards.png"
+                    alt="Credit Cards"
+                    class="bandeiras"
+                  />
+
+                  <div class="valores">
+                    <span>Total = $294</span>
+                    <!-- <small>FREE Shipping</small> -->
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li class="kit-option k3">
+              <a href="https://garaherb.mycartpanda.com/checkout/193383599:1">
+                <div class="header">GREAT VALUE</div>
+
+                <div class="main">
+                  <strong>3 BOTTLES</strong>
+                  <span class="days">90 Day Supply</span>
+                  <div class="area-img">
+                    <img src="assets/img/3.png" alt="3 Bottles" />
+                    <div class="save" style="left: 0; top: 0">
+                      <b
+                        >Save <br />
+                        $330</b
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="footer">
+                  <div class="price"><strong>$69</strong> / bottle</div>
+                  <div class="regular-price">Regular: <s>$537</s></div>
+                  <ul>
+                    <li style="color: #0b7135">
+                      <span style="background-color: #0b7135">✓</span>1 FREE
+                      BONUS!
+                    </li>
+                    <li style="color: #62001b">
+                      <span style="background-color: #62001b">✓</span>FREE
+                      SHIPPING!
+                    </li>
+                  </ul>
+                  <button class="button">
+                    <img src="assets/img/button.png" alt="Order Now" />
+                  </button>
+                  <img
+                    src="assets/img/cards.png"
+                    alt="Credit Cards"
+                    class="bandeiras"
+                  />
+
+                  <div class="valores">
+                    <span>Total = $207</span>
+                    <!-- <small>FREE Shipping</small> -->
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="garantia container">
+        <div class="bg"></div>
+        <img src="assets/img/garant.webp" alt="GaraHerb" />
+
+        <div class="content">
+          <h2 class="title">100% SATISFACTION GUARANTEED</h2>
+
+          <p>
+            GaraHerb is backed by a 100% Money Back Guarantee for <br />
+            60 days from the date of your original purchase. ORDER NOW
+          </p>
+
+          <a href="#kits" class="btn">Order Now</a>
+        </div>
+      </section>
+
+      <section class="frete_ container">
+        <h2>EVERY 6 BOTTLES ORDER GETS FREE SHIPPING TOO!</h2>
+        <h3>*96% Of Customers Order 6 Bottles (Our Recommended Option)</h3>
+      </section>
+      <section class="bonus pd">
+        <div class="container center-flex">
+          <h2 class="title">Order <u>6 Bottles</u> and Get 2 FREE Bonuses!</h2>
+
+          <ul>
+            <li>
+              <div class="card">
+                <img
+                  src="assets/img/mockup_ebook_the_lesbian.webp"
+                  alt="GaraHerb"
+                />
+
+                <h3 class="bn">
+                  <u>Bonus #1:</u>
+                  The Lesbian Trick Manual
+                </h3>
+              </div>
+
+              <div class="area-preco">
+                <strong style="color: #c29a2d"> RRP: <s>$49.95 </s></strong>
+
+                <strong style="color: #c29a2d">Today: <b>FREE</b></strong>
+              </div>
+
+              <p>
+                Learn a lesbian trick using just two fingers, which I learned
+                from one of the world's leading sexologists. It can make any
+                woman have multiple orgasms in just a few minutes. This trick is
+                seven times more powerful than hands, tongue, and vibrators
+                combined.
+              </p>
+            </li>
+
+            <li>
+              <div class="card">
+                <img
+                  src="assets/img/mockup_ebook_giant_monster.webp"
+                  alt="Garaherb"
+                />
+
+                <h3 class="bn">
+                  <u>Bonus #2:</u>
+                  Giant Monster Boner
+                </h3>
+              </div>
+
+              <div class="area-preco">
+                <strong style="color: #c29a2d"> RRP: <s>$49.95 </s></strong>
+
+                <strong style="color: #c29a2d">Today: <b>FREE</b></strong>
+              </div>
+
+              <p>
+                A manual that shows homemade recipes and simple exercises you
+                can do every day in the shower to increase your penis size by 2
+                to 4 inches naturally, leaving it thicker than ever.
+              </p>
+            </li>
+            <!-- <li>
+              <div class="card">
+                <img src="assets/img/mockup-diabetes.webp" alt="Arialief" />
+
+                <h3 class="bn">
+                  <u>Bonus #3:</u>
+                  Diabetes Under Control
+                </h3>
+              </div>
+
+              <div class="area-preco">
+                <strong style="color: #c29a2d"> RRP: <s>$49.95 </s></strong>
+
+                <strong style="color: #c29a2d">Today: <b>FREE</b></strong>
+              </div>
+
+              <p>
+                Inside this secret guide, you'll discover powerful,
+                easy-to-apply methods to keep your glucose levels under
+                control—without having to give up the pleasure of eating!
+              </p>
+            </li>
+            <li>
+              <div class="card">
+                <img src="assets/img/mockup-ebook-anti-obesity.webp" alt="Arialief" />
+
+                <h3 class="bn">
+                  <u>Bonus #4:</u>
+                  Anti-obesity Juices for a Healthy Life
+                </h3>
+              </div>
+
+              <div class="area-preco">
+                <strong style="color: #c29a2d"> RRP: <s>$49.95 </s></strong>
+
+                <strong style="color: #c29a2d">Today: <b>FREE</b></strong>
+              </div>
+
+              <p>
+                In this exclusive guide, you'll discover powerful drinks that
+                speed up your metabolism, control hunger, and help your body
+                burn fat surprisingly effectively.
+              </p>
+            </li> -->
+          </ul>
+        </div>
+      </section>
+
+      <section class="faq">
+        <div class="container">
+          <h2 class="title">Frequently Asked Questions</h2>
+
+          <div class="accordion">
+            <div class="item">
+              <div class="header">
+                <p>HOW CAN I GET STARTED?</p>
+              </div>
+              <div class="body">
+                <p>
+                  To start enjoying Garaherb and embark on your new journey
+                  towards a life filled with vitality, energy, and joy, simply
+                  choose the pack option that appeals to you the most. On the
+                  next page, fill in your details and confirm your order. Your
+                  request will be forwarded to our responsive warehouse team,
+                  who will prepare and send out your order, plus notify you
+                  about the shipment. You can begin your Garaherb experience in
+                  just a few days! Click on the option that suits you best below
+                  to take advantage while Garaherb is still available.
+                </p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="header">
+                <p>IS Garaherb RIGHT FOR ME?</p>
+              </div>
+              <div class="body">
+                <p>
+                  Garaherb has been providing incredible support for men's
+                  sexual health in their 30s, 40s, 50s, and even 70s. Crafted
+                  from the insights of modern science, Garaherb's formula is
+                  both gentle and potent, made entirely from pure plant
+                  ingredients and natural minerals. And rest easy knowing it's
+                  made in the USA in a state-of-the-art facility that's FDA
+                  registered and GMP certified.
+                </p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="header">
+                <p>WHAT KIND OF RESULTS CAN I EXPECT FROM Garaherb?</p>
+              </div>
+              <div class="body">
+                <p>
+                  The results with Garaherb typically unfold in stages,
+                  depending on how long you're on the treatment. Generally, they
+                  go something like this: Stage 1. You'll feel significantly
+                  better overall, with more energy, clearer thoughts, and
+                  restful sleep - like turning back the clock a decade or two.
+                  That's how you'll feel again. Stage 2. You'll begin to notice
+                  firmer muscles and erections, alongside more energy and
+                  stamina. Stage 3. All your improvements solidify as long as
+                  you take Garaherb for at least three continuous months. This
+                  is when the inflammation that's been affecting your
+                  reproductive system is completely eradicated, allowing you to
+                  enjoy a fulfilling sex life, regardless of age.
+                </p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="header">
+                <p>HOW LONG WILL IT TAKE TO SEE RESULTS?</p>
+              </div>
+              <div class="body">
+                <p>
+                  Everyone is different, so the time it takes to see results can
+                  vary. Most people start noticing a difference within the first
+                  week. In our tests, the best outcomes are achieved when you
+                  take Garaherb consistently for 3 months (or longer) to allow
+                  enough time to cleanse, restore, and renew. That's why we
+                  highly recommend you take advantage of our promotional
+                  discount package for 3 or 6 bottles.
+                </p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="header">
+                <p>WHAT IF Garaherb DOESN’T WORK FOR ME?</p>
+              </div>
+              <div class="body">
+                <p>
+                  I want you to be thrilled with your purchase, not just
+                  satisfied. And you won't know until you try it! So, you can
+                  use Garaherb for 60 days, with my "No Questions Asked 100%
+                  Money Back Guarantee". The only way to be fully convinced is
+                  to try this amazing formula for yourself and see the results.
+                </p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="header">
+                <p>CAN YOU TELL ME ABOUT THE GUARANTEE AGAIN?</p>
+              </div>
+              <div class="body">
+                <p>
+                  The more results we see, the more convinced we are of
+                  Garaherb's ability to fully support your sexual health.
+                  However, it's true that nothing works for 100% of the people
+                  who try it, as each body reacts in its own unique way. That's
+                  why every bottle of Garaherb comes with an ironclad 60-day
+                  money-back guarantee. If, for any reason, you're not
+                  completely satisfied with the results, you can simply return
+                  what you haven't used for a full, no-questions-asked refund.
+                </p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="header">
+                <p>WHERE CAN I BUY Garaherb AND HOW QUICKLY CAN I GET IT?</p>
+              </div>
+              <div class="body">
+                <p>
+                  To ensure you're purchasing the original product and to
+                  guarantee the purity of the ingredients, please make your
+                  purchase exclusively through the official website. Your order
+                  will be shipped directly to your home or office via premium
+                  carriers like FedEx or UPS. We strive to dispatch every order
+                  within 24 working hours, and to make things easy, you will
+                  receive an email with your tracking number so you can follow
+                  your package. On average, the package will arrive at your
+                  doorstep within 5 to 10 days for domestic orders.
+                </p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="header">
+                <p>
+                  IS MY PURCHASE SECURE? HOW MANY TIMES WILL YOU CHARGE MY CARD?
+                </p>
+              </div>
+              <div class="body">
+                <p>
+                  To purchase Garaherb you are only asked for a one time payment
+                  right on this page. There are no other future payments needed
+                  to benefit from this product. This website is highly secure.
+                  We use industry-leading technology (such as SSLs) to keep your
+                  information safe and private.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="area-btn">
+            <a href="#kits" class="btn">Order Now</a>
+            <span>60 Day Money-Back Guarantee</span>
+          </div>
+        </div>
+      </section>
+
+      <div class="header_">
+        <div class="container">
+          <h1>
+            TAKE ADVANTAGE OF THIS LIMITED OFFER TO STOCK UP ON Garaherb
+            <strong> WHILE SUPPLIES LAST!</strong>
+          </h1>
+        </div>
+      </div>
+
+      <section class="area-kits pd" id="kits" style="margin-top: 40px">
+        <div class="container">
+          <ul>
+            <li class="kit-option k1">
+              <a href="https://garaherb.mycartpanda.com/checkout/193383598:1">
+                <div class="header">GOOD VALUE</div>
+
+                <div class="main">
+                  <strong>2 BOTTLES</strong>
+                  <span class="days">60 Day Supply</span>
+                  <div class="area-img">
+                    <img src="assets/img/mockup_2.webp" alt="2 Bottles" />
+                  </div>
+                </div>
+
+                <div class="footer">
+                  <div class="price"><strong>$89</strong> / bottle</div>
+                  <div class="regular-price">Regular: <s>$179</s></div>
+
+                  <button class="button">
+                    <img src="assets/img/button.png" alt="Order Now" />
+                  </button>
+                  <img
+                    src="assets/img/cards.png"
+                    alt="Credit Cards"
+                    class="bandeiras"
+                  />
+
+                  <div class="valores">
+                    <span>Total = $158</span>
+                    <small>+ $9.99 Shipping</small>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li class="kit-option best-option">
+              <a href="https://garaherb.mycartpanda.com/checkout/193383600:1">
+                <div class="header" style="background: #000">BEST VALUE</div>
+
+                <div class="main">
+                  <strong>6 BOTTLES</strong>
+                  <span class="days">180 Day Supply</span>
+                  <div class="area-img">
+                    <img src="assets/img/6.png" alt="6 Bottles" />
+                    <div class="save" style="left: 0; top: 0">
+                      <b
+                        >Save <br />
+                        $780</b
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="footer">
+                  <div class="price"><strong>$49</strong> / bottle</div>
+                  <div class="regular-price">Regular: <s>$1074</s></div>
+                  <ul>
+                    <li style="color: #0b7135">
+                      <span style="background-color: #0b7135">✓</span>2 FREE
+                      BONUS!
+                    </li>
+                    <li style="color: #62001b">
+                      <span style="background-color: #62001b">✓</span>FREE
+                      SHIPPING!
+                    </li>
+                  </ul>
+                  <button class="button">
+                    <img src="assets/img/button.png" alt="Order Now" />
+                  </button>
+
+                  <img
+                    src="assets/img/cards.png"
+                    alt="Credit Cards"
+                    class="bandeiras"
+                  />
+
+                  <div class="valores">
+                    <span>Total = $294</span>
+                    <!-- <small>FREE Shipping</small> -->
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li class="kit-option k3">
+              <a href="https://garaherb.mycartpanda.com/checkout/193383599:1">
+                <div class="header">GREAT VALUE</div>
+
+                <div class="main">
+                  <strong>3 BOTTLES</strong>
+                  <span class="days">90 Day Supply</span>
+                  <div class="area-img">
+                    <img src="assets/img/3.png" alt="3 Bottles" />
+                    <div class="save" style="left: 0; top: 0">
+                      <b
+                        >Save <br />
+                        $330</b
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="footer">
+                  <div class="price"><strong>$69</strong> / bottle</div>
+                  <div class="regular-price">Regular: <s>$537</s></div>
+                  <ul>
+                    <li style="color: #0b7135">
+                      <span style="background-color: #0b7135">✓</span>1 FREE
+                      BONUS!
+                    </li>
+                    <li style="color: #62001b">
+                      <span style="background-color: #62001b">✓</span>FREE
+                      SHIPPING!
+                    </li>
+                  </ul>
+                  <button class="button">
+                    <img src="assets/img/button.png" alt="Order Now" />
+                  </button>
+                  <img
+                    src="assets/img/cards.png"
+                    alt="Credit Cards"
+                    class="bandeiras"
+                  />
+
+                  <div class="valores">
+                    <span>Total = $207</span>
+                    <!-- <small>FREE Shipping</small> -->
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <img
+        src="assets/img/medalhas.png"
+        alt="GaraHerb"
+        class="medalhas container"
+      />
+    </div>
+
+    <footer>
+      <div class="data_footer">
+        <div class="container">
+          <nav>
+            <a href="terms.html">Terms & Conditions</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="contact.html">Contact</a>
+            <a href="disclaimer.html">Disclaimer</a>
+            <a href="reference.html">Reference</a>
+            <a href="refund.html">Refund</a>
+            <a href="shipping.html">Shipping</a>
+          </nav>
+
+          <div class="disclaimer">
+            <p>
+              The information on this website has not been evaluated by the Food
+              and Drug Administration. These products are not intended to
+              diagnose, treat, cure or prevent any disease.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="copy">
+        <span
+          >Copyright <span class="current-year"></span> © GaraHerb. All Rights
+          Reserved.</span
+        >
+      </div>
+    </footer>
+
+    <script>
+      var delaySeconds = 2285;
+      var player = document.querySelector("vturb-smartplayer");
+      player.addEventListener("player:ready", function () {
+        player.displayHiddenElements(delaySeconds, ["[data-delay]"], {
+          persist: true,
+        });
+      });
+    </script>
+
+    <script>
+      function local() {
+        var request = new XMLHttpRequest();
+        request.open("GET", "https://wtfismyip.com/json", true);
+
+        request.onload = function () {
+          if (this.status >= 200 && this.status < 400) {
+            var data = JSON.parse(this.response);
+            let output = data.YourFuckingLocation.replace(/\,.+/g, "$'");
+            document.getElementById("cidade").innerHTML = output;
+          } else {
+          }
+        };
+        request.onerror = function () {};
+        request.send();
+      }
+      local();
+
+      document
+        .querySelectorAll(".accordion .item .header")
+        .forEach((header) => {
+          header.addEventListener("click", function () {
+            const item = this.parentNode;
+            if (item.classList.contains("active")) {
+              item.classList.remove("active");
+            } else {
+              document
+                .querySelectorAll(".accordion .item")
+                .forEach((i) => i.classList.remove("active"));
+              item.classList.add("active");
+            }
+          });
+        });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        var currentYear = new Date().getFullYear();
+        var yearSpan = document.querySelector(".current-year");
+        yearSpan.textContent = currentYear;
+      });
+    </script>
+
+    <script>
+      function getQueryParams() {
+        return new URLSearchParams(window.location.search);
+      }
+
+      // FunÃ§Ã£o para combinar os parÃ¢metros do href original com os parÃ¢metros da URL atual
+      function combineParams(originalHref, currentParams) {
+        let [baseUrl, originalParamsString] = originalHref.split("?");
+        let originalParams = new URLSearchParams(originalParamsString || "");
+
+        // Adiciona os parÃ¢metros atuais da URL aos parÃ¢metros originais
+        currentParams.forEach((value, key) => {
+          // Verifica se o parÃ¢metro jÃ¡ existe para evitar duplicaÃ§Ã£o
+          if (!originalParams.has(key)) {
+            originalParams.append(key, value);
+          }
+        });
+
+        // Monta a URL final
+        let finalParamsString = originalParams.toString();
+        return finalParamsString ? `${baseUrl}?${finalParamsString}` : baseUrl;
+      }
+
+      // Adiciona os parÃ¢metros da URL aos links de checkout
+      document.addEventListener("DOMContentLoaded", function () {
+        let buttons = document.querySelectorAll(".area-kits a");
+        let currentParams = getQueryParams();
+
+        buttons.forEach(function (button) {
+          let originalHref = button.getAttribute("href");
+          button.setAttribute(
+            "href",
+            combineParams(originalHref, currentParams)
+          );
+        });
+      });
+    </script>
+  </body>
+</html>
