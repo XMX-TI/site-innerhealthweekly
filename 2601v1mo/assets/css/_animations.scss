@@ -1,0 +1,131 @@
+@keyframes float-blur {
+  0%,
+  100% {
+    transform: translateY(0px);
+    filter: blur(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+    filter: blur(1.5px);
+  }
+}
+
+@keyframes sway-blur {
+  0%,
+  100% {
+    transform: translateX(0px) rotate(0deg);
+    filter: blur(0px);
+  }
+  50% {
+    transform: translateX(5px) rotate(2deg);
+    filter: blur(1px);
+  }
+}
+
+@keyframes sway-flip {
+  0%,
+  100% {
+    transform: scaleX(-1) translateX(0px) rotate(0deg);
+    filter: blur(0px);
+  }
+  50% {
+    transform: scaleX(-1) translateX(5px) rotate(2deg);
+    filter: blur(1px);
+  }
+}
+
+@keyframes tilt-blur {
+  0%,
+  100% {
+    transform: translateY(-65%) rotate(0deg);
+    filter: blur(0px);
+  }
+  50% {
+    transform: translateY(-65%) rotate(-3deg);
+    filter: blur(1px);
+  }
+}
+
+@keyframes neural-pulse {
+  0%,
+  100% {
+    opacity: 0.4;
+    filter: brightness(1);
+  }
+  50% {
+    opacity: 1;
+    filter: brightness(1.2);
+  }
+}
+
+@keyframes lightning-flash {
+  0%,
+  100% {
+    opacity: 0.3;
+    filter: brightness(1) drop-shadow(0 0 5px rgba(255, 255, 255, 0.3));
+  }
+  10%,
+  15% {
+    opacity: 1;
+    filter: brightness(1.5) drop-shadow(0 0 20px rgba(255, 255, 255, 0.8));
+  }
+  12%,
+  17% {
+    opacity: 0.5;
+    filter: brightness(1.2) drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+  }
+  20%,
+  90% {
+    opacity: 0.3;
+    filter: brightness(1) drop-shadow(0 0 5px rgba(255, 255, 255, 0.3));
+  }
+}
+
+@keyframes gentle-tilt {
+  0%,
+  100% {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  50% {
+    transform: translateX(-50%) rotate(-2deg);
+  }
+}
+
+@keyframes gentle-float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-40px);
+  }
+}
+
+@keyframes gentle-glow {
+  0%,
+  100% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes rotate-border {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+ 
+@keyframes float-p1 {
+  0%, 100% { transform: rotate(38deg) translateY(0); }
+  50% { transform: rotate(45deg) translateY(-15px); }
+}
+
+@keyframes float-p2 {
+  0%, 100% { transform: rotate(-22deg) translateY(0); }
+  50% { transform: rotate(-15deg) translateY(-15px); }
+}
