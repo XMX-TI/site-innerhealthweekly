@@ -1,0 +1,66 @@
+@keyframes mexer {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(5deg);
+    filter: blur(2px);
+  }
+}
+
+@keyframes mexerscale {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  50% {
+    
+    filter: blur(0.5px);
+    transform: scale(105%);
+  }
+}
+
+@keyframes float-pill {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-15px) rotate(5deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(-3deg);
+  }
+  75% {
+    transform: translateY(-12px) rotate(2deg);
+  }
+}
+
+@keyframes lx-marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes bg-pill-float {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+}
+
+@keyframes bg-linhas-glow {
+  0%, 100% {
+    opacity: 0.4;
+    filter: brightness(1);
+  }
+  50% {
+    opacity: 0.8;
+    filter: brightness(1.4);
+  }
+}
