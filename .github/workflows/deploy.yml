@@ -33,17 +33,18 @@ jobs:
 
           BASE_DOMAIN_NORMALIZED="$(echo "${BASE_DOMAIN}" | tr '[:upper:]' '[:lower:]' | sed -E 's#^https?://##; s#/$##')"
           DOMAIN_HOST="$(echo "${BASE_DOMAIN_NORMALIZED}" | sed -E 's#^www\.##')"
-          ACCOUNT_NAME="${DOMAIN_HOST%%.*}"
+          SSH_ENV="${{ secrets.SSH_ENV }}"
+          ACCOUNT_NAME="${SSH_ENV}"
 
           if [[ -z "${ACCOUNT_NAME}" ]]; then
-            echo "Erro: nao foi possivel derivar o nome da conta a partir de BASE_DOMAIN=${BASE_DOMAIN}."
+            echo "Erro: configure secrets.SSH_ENV com o usuario cPanel."
             exit 1
           fi
 
           BASE_PATH="/home/${ACCOUNT_NAME}/public_html"
 
           echo "Resolved BRANCH_NAME: ${BRANCH_NAME}"
-          echo "Derived ACCOUNT_NAME: ${ACCOUNT_NAME}"
+          echo "Resolved ACCOUNT_NAME from SSH_ENV."
           echo "Configured BASE_PATH: ${BASE_PATH}"
           echo "Configured BASE_DOMAIN: ${BASE_DOMAIN}"
           echo "Normalized BASE_DOMAIN: ${BASE_DOMAIN_NORMALIZED}"
@@ -72,21 +73,21 @@ jobs:
           echo "Deploy target: ${TARGET_PATH}"
           echo "================ DEPLOY RESOLVE END =================="
 
-      # - name: Print deploy summary
-      #   shell: bash
-      #   run: |
-      #     echo "================ DEPLOY SUMMARY ======================"
-      #     echo "Branch output: ${{ steps.resolve_target.outputs.branch_name }}"
-      #     echo "Account output: ${{ steps.resolve_target.outputs.account_name }}"
-      #     echo "Target output: ${{ steps.resolve_target.outputs.target_path }}"
-      #     echo "Source pattern: ."
-      #     echo "Repository root: ${GITHUB_WORKSPACE}"
-      #     echo "File count (tracked in workspace): $(find . -type f | wc -l)"
-      #     echo "Top-level files and folders:"
-      #     ls -la
-      #     echo "Preview of files to deploy (first 40):"
-      #     find . -type f | head -n 40
-      #     echo "======================================================"
+    #   - name: Print deploy summary
+    #     shell: bash
+    #     run: |
+    #       echo "================ DEPLOY SUMMARY ======================"
+    #       echo "Branch output: ${{ steps.resolve_target.outputs.branch_name }}"
+    #       echo "Account output: ${{ steps.resolve_target.outputs.account_name }}"
+    #       echo "Target output: ${{ steps.resolve_target.outputs.target_path }}"
+    #       echo "Source pattern: ."
+    #       echo "Repository root: ${GITHUB_WORKSPACE}"
+    #       echo "File count (tracked in workspace): $(find . -type f | wc -l)"
+    #       echo "Top-level files and folders:"
+    #       ls -la
+    #       echo "Preview of files to deploy (first 40):"
+    #       find . -type f | head -n 40
+    #       echo "======================================================"
 
       - name: Deploy to SFTP
         uses: appleboy/scp-action@master
