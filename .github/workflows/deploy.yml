@@ -1,0 +1,109 @@
+name: Deploy Website via SFTP
+
+on:
+  push:
+    branches:
+      - "**"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Resolve deploy target
+        id: resolve_target
+        shell: bash
+        run: |
+          echo "================ DEPLOY RESOLVE START ================"
+          echo "GITHUB_EVENT_NAME: ${GITHUB_EVENT_NAME}"
+          echo "GITHUB_REF: ${GITHUB_REF}"
+          echo "GITHUB_REF_NAME: ${GITHUB_REF_NAME}"
+          echo "GITHUB_SHA: ${GITHUB_SHA}"
+
+          BRANCH_NAME="${GITHUB_REF_NAME}"
+          BASE_DOMAIN="${{ vars.BASE_DOMAIN }}"
+
+          if [[ -z "${BASE_DOMAIN}" ]]; then
+            echo "Erro: configure a variavel de repositorio BASE_DOMAIN."
+            exit 1
+          fi
+
+          BASE_DOMAIN_NORMALIZED="$(echo "${BASE_DOMAIN}" | tr '[:upper:]' '[:lower:]' | sed -E 's#^https?://##; s#/$##')"
+          DOMAIN_HOST="$(echo "${BASE_DOMAIN_NORMALIZED}" | sed -E 's#^www\.##')"
+          ACCOUNT_NAME="${DOMAIN_HOST%%.*}"
+
+          if [[ -z "${ACCOUNT_NAME}" ]]; then
+            echo "Erro: nao foi possivel derivar o nome da conta a partir de BASE_DOMAIN=${BASE_DOMAIN}."
+            exit 1
+          fi
+
+          BASE_PATH="/home/${ACCOUNT_NAME}/public_html"
+
+          echo "Resolved BRANCH_NAME: ${BRANCH_NAME}"
+          echo "Derived ACCOUNT_NAME: ${ACCOUNT_NAME}"
+          echo "Configured BASE_PATH: ${BASE_PATH}"
+          echo "Configured BASE_DOMAIN: ${BASE_DOMAIN}"
+          echo "Normalized BASE_DOMAIN: ${BASE_DOMAIN_NORMALIZED}"
+          echo "Resolved DOMAIN_HOST: ${DOMAIN_HOST}"
+
+          if [[ "${BRANCH_NAME}" == "main" ]]; then
+            echo "Branch is main. Deploy target will be root public_html."
+            TARGET_PATH="${BASE_PATH}/"
+          else
+            echo "Branch is not main. Deploy target will include subdomain."
+            BRANCH_SLUG="$(echo "${BRANCH_NAME}" | tr '[:upper:]' '[:lower:]' | sed -E 's#[^a-z0-9-]+#-#g; s#^-+##; s#-+$##')"
+            echo "Generated BRANCH_SLUG: ${BRANCH_SLUG}"
+
+            if [[ -z "${BRANCH_SLUG}" ]]; then
+              echo "Erro: nao foi possivel gerar um slug valido para a branch ${BRANCH_NAME}."
+              exit 1
+            fi
+
+            TARGET_PATH="${BASE_PATH}/${BRANCH_SLUG}.${DOMAIN_HOST}/"
+          fi
+
+          echo "branch_name=${BRANCH_NAME}" >> "${GITHUB_OUTPUT}"
+          echo "target_path=${TARGET_PATH}" >> "${GITHUB_OUTPUT}"
+          echo "account_name=${ACCOUNT_NAME}" >> "${GITHUB_OUTPUT}"
+          echo "Deploy branch: ${BRANCH_NAME}"
+          echo "Deploy target: ${TARGET_PATH}"
+          echo "================ DEPLOY RESOLVE END =================="
+
+      - name: Print deploy summary
+        shell: bash
+        run: |
+          echo "================ DEPLOY SUMMARY ======================"
+          echo "Branch output: ${{ steps.resolve_target.outputs.branch_name }}"
+          echo "Account output: ${{ steps.resolve_target.outputs.account_name }}"
+          echo "Target output: ${{ steps.resolve_target.outputs.target_path }}"
+          echo "Source pattern: ."
+          echo "Repository root: ${GITHUB_WORKSPACE}"
+          echo "File count (tracked in workspace): $(find . -type f | wc -l)"
+          echo "Top-level files and folders:"
+          ls -la
+          echo "Preview of files to deploy (first 40):"
+          find . -type f | head -n 40
+          echo "======================================================"
+
+      - name: Deploy to SFTP
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          port: ${{ secrets.SSH_PORT }}
+          source: "."
+          target: ${{ steps.resolve_target.outputs.target_path }}
+
+      - name: Deploy finished
+        if: ${{ success() }}
+        shell: bash
+        run: |
+          echo "================ DEPLOY DONE ========================="
+          echo "Deploy completed with success."
+          echo "Branch: ${{ steps.resolve_target.outputs.branch_name }}"
+          echo "Target: ${{ steps.resolve_target.outputs.target_path }}"
+          echo "======================================================"
