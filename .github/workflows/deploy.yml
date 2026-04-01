@@ -72,21 +72,21 @@ jobs:
           echo "Deploy target: ${TARGET_PATH}"
           echo "================ DEPLOY RESOLVE END =================="
 
-      - name: Print deploy summary
-        shell: bash
-        run: |
-          echo "================ DEPLOY SUMMARY ======================"
-          echo "Branch output: ${{ steps.resolve_target.outputs.branch_name }}"
-          echo "Account output: ${{ steps.resolve_target.outputs.account_name }}"
-          echo "Target output: ${{ steps.resolve_target.outputs.target_path }}"
-          echo "Source pattern: ."
-          echo "Repository root: ${GITHUB_WORKSPACE}"
-          echo "File count (tracked in workspace): $(find . -type f | wc -l)"
-          echo "Top-level files and folders:"
-          ls -la
-          echo "Preview of files to deploy (first 40):"
-          find . -type f | head -n 40
-          echo "======================================================"
+      # - name: Print deploy summary
+      #   shell: bash
+      #   run: |
+      #     echo "================ DEPLOY SUMMARY ======================"
+      #     echo "Branch output: ${{ steps.resolve_target.outputs.branch_name }}"
+      #     echo "Account output: ${{ steps.resolve_target.outputs.account_name }}"
+      #     echo "Target output: ${{ steps.resolve_target.outputs.target_path }}"
+      #     echo "Source pattern: ."
+      #     echo "Repository root: ${GITHUB_WORKSPACE}"
+      #     echo "File count (tracked in workspace): $(find . -type f | wc -l)"
+      #     echo "Top-level files and folders:"
+      #     ls -la
+      #     echo "Preview of files to deploy (first 40):"
+      #     find . -type f | head -n 40
+      #     echo "======================================================"
 
       - name: Deploy to SFTP
         uses: appleboy/scp-action@master
