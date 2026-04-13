@@ -1,0 +1,1380 @@
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- <meta http-equiv="Content-Security-Policy" content="script-src 'none'"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/img/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/img/favicon-32x32.png"
+    />
+
+    <link rel="shortcut icon" href="assets/img/favicon.ico" />
+
+    <!-- Primary Meta Tags -->
+    <title>Presgera</title>
+    <meta
+      name="title"
+      content="Ultimate Relief and Support for Neuropathy with Presgera."
+    />
+    <meta
+      name="description"
+      content="Ultimate Relief and Support for Neuropathy with Presgera.."
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://presgera.com" />
+    <meta
+      property="og:title"
+      content="Ultimate Relief and Support for Neuropathy with Presgera."
+    />
+    <meta
+      property="og:description"
+      content="Ultimate Relief and Support for Neuropathy with Presgera."
+    />
+    <meta
+      property="og:image"
+      content="https://presgera.com/assets/ima/product.webp"
+    />
+
+    <!-- Open Graph / Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://presgera.com/" />
+    <meta
+      property="twitter:title"
+      content="Ultimate Relief and Support for Neuropathy with Presgera."
+    />
+    <meta
+      property="twitter:description"
+      content="Ultimate Relief and Support for Neuropathy with Presgera.."
+    />
+    <meta
+      property="twitter:image"
+      content="https://presgera.com/assets/ima/product.webp"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <style>
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+
+    <style>
+      .elementor-element:has(#smartplayer) {
+        width: 100%;
+      }
+      [data-delay] {
+        display: none;
+      }
+
+      .smartplayer-call-action {
+        transform: scale(0);
+        overflow: hidden;
+        padding: 0 !important;
+        margin: 0;
+        width: 0px;
+        height: 0px;
+      }
+      main {
+        padding: 30px 0 16px;
+      }
+
+      .promo-banner {
+        background: #ec8e21 !important;
+        position: relative;
+        margin-bottom: 90px !important;
+      }
+
+      .g-arrow {
+        position: absolute;
+        clip-path: polygon(100% 0, 0 0, 50% 100%);
+        height: 60px;
+        max-width: 700px;
+        width: 100%;
+        margin: 0 auto;
+        background: #ec8e21;
+        border-top: none !important;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -59px;
+      }
+
+      @media (max-width: 900px) {
+        h1 {
+          font-size: 24px !important;
+        }
+        .promo-banner h2 {
+          font-size: 29px;
+          line-height: 1;
+        }
+
+        main {
+          padding: 24px 0 16px;
+        }
+        .promo-banner {
+          margin-bottom: 60px !important;
+        }
+        .area-kits {
+          margin-bottom: 0;
+        }
+        .rotulo {
+          padding-top: 0 !important;
+        }
+
+        main .container h2 {
+          font-size: 16px;
+        }
+      }
+    </style>
+
+    <script>
+      var mysrc =
+        "https://tracking.buygoods.com/track/?a=11038&firstcookie=0" +
+        "&tracking_redirect=&referrer=" +
+        encodeURIComponent(document.referrer) +
+        "&sessid2=" +
+        ReadCookie("sessid2") +
+        "&product=pre2,pre3,pre6&vid1=&vid2=&vid3=&caller_url=" +
+        encodeURIComponent(window.location.href);
+      if (typeof add_to_cart !== "undefined") {
+        mysrc = mysrc + "&add_to_cart=" + add_to_cart;
+      }
+      var newScript = document.createElement("script");
+      newScript.type = "text/javascript";
+      newScript.defer = true;
+      newScript.src = mysrc;
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(newScript, s);
+      function ReadCookie(name) {
+        name += "=";
+        var parts = document.cookie.split(/;\s*/);
+        for (var i = 0; i < parts.length; i++) {
+          var part = parts[i];
+          if (part.indexOf(name) == 0) return part.substring(name.length);
+        }
+        return "";
+      }
+    </script>
+
+    <script type="text/javascript">
+      setTimeout(function () {
+        var i = document.createElement("iframe");
+        i.async = true;
+        i.style = "display:none";
+        i.setAttribute(
+          "src",
+          "https://buygoods.com/affiliates/go/conversion/iframe/bg?a=11038&t=200928286ce9da2df21eba4f0a5f30fc&s=" +
+            ReadCookie("sessid2")
+        );
+        document.body.appendChild(i);
+      }, 1000);
+    </script>
+    <link
+      rel="preload"
+      href="https://scripts.converteai.net/bff5868f-b8e9-4bb4-af45-52d9b7681a6e/players/680953a65238ef99f8212535/player.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="https://scripts.converteai.net/lib/js/smartplayer/v1/smartplayer.min.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="https://images.converteai.net/bff5868f-b8e9-4bb4-af45-52d9b7681a6e/players/680953a65238ef99f8212535/thumbnail.jpg"
+      as="image"
+    />
+    <link
+      rel="preload"
+      href="https://cdn.converteai.net/bff5868f-b8e9-4bb4-af45-52d9b7681a6e/6809427038de5bb8621ab011/main.m3u8"
+      as="fetch"
+    />
+    <link rel="dns-prefetch" href="https://cdn.converteai.net" />
+    <link rel="dns-prefetch" href="https://scripts.converteai.net" />
+    <link rel="dns-prefetch" href="https://images.converteai.net" />
+    <link rel="dns-prefetch" href="https://api.vturb.com.br" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h1 style="color: #000">
+          <b style="color: #ec8e21">US Scientist:</b> This Yellow Vitamin Wipes
+          Out Nerve Pain
+        </h1>
+
+        <div
+          id="vid_680953a65238ef99f8212535"
+          style="position: relative; width: 100%; padding: 100% 0 0"
+        >
+          <img
+            id="thumb_680953a65238ef99f8212535"
+            src="https://images.converteai.net/bff5868f-b8e9-4bb4-af45-52d9b7681a6e/players/680953a65238ef99f8212535/thumbnail.jpg"
+            style="
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              display: block;
+            "
+            alt="thumbnail"
+          />
+          <div
+            id="backdrop_680953a65238ef99f8212535"
+            style="
+              -webkit-backdrop-filter: blur(5px);
+              backdrop-filter: blur(5px);
+              position: absolute;
+              top: 0;
+              height: 100%;
+              width: 100%;
+            "
+          ></div>
+        </div>
+        <script type="text/javascript" id="scr_680953a65238ef99f8212535">
+          var s = document.createElement("script");
+          (s.src =
+            "https://scripts.converteai.net/bff5868f-b8e9-4bb4-af45-52d9b7681a6e/players/680953a65238ef99f8212535/player.js"),
+            (s.async = !0),
+            document.head.appendChild(s);
+        </script>
+
+        <h2 style="margin-top: 20px">
+          <svg
+            width="20"
+            height="19"
+            viewBox="0 0 16 14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="st-current"
+          >
+            <path
+              d="M13.1592 13.7115C14.061 12.8123 14.7761 11.7437 15.2636 10.5671C15.751 9.39058 16.0012 8.1293 15.9996 6.85577C16.0012 5.58225 15.751 4.32097 15.2636 3.14443C14.7761 1.96788 14.061 0.899268 13.1592 0L12.3516 0.806495C13.1472 1.59997 13.7783 2.54288 14.2084 3.58102C14.6385 4.61916 14.8591 5.73207 14.8577 6.85577C14.8577 9.21822 13.8995 11.3571 12.3516 12.9051L13.1592 13.7115Z"
+              fill="#eb8e21"
+            ></path>
+            <path
+              d="M11.5458 12.0986C12.2353 11.4109 12.7822 10.5937 13.1549 9.69395C13.5276 8.79422 13.7189 7.8297 13.7177 6.85582C13.7189 5.88194 13.5276 4.91743 13.1549 4.0177C12.7822 3.11797 12.2353 2.30076 11.5458 1.61304L10.7393 2.41953C11.3227 3.00147 11.7854 3.69297 12.1008 4.45429C12.4162 5.21562 12.578 6.03176 12.577 6.85582C12.5783 7.68 12.4167 8.49631 12.1016 9.25783C11.7864 10.0194 11.3238 10.7111 10.7404 11.2933L11.5458 12.0986Z"
+              fill="#eb8e21"
+            ></path>
+            <path
+              d="M8.79159 11.0554C9.26896 10.5793 9.64754 10.0135 9.90556 9.39055C10.1636 8.76763 10.2959 8.09986 10.2951 7.42561C10.2959 6.75137 10.1636 6.0836 9.90556 5.46068C9.64754 4.83776 9.26896 4.27197 8.79159 3.79582L7.9851 4.60231C8.35638 4.97267 8.65082 5.41276 8.85148 5.89728C9.05214 6.38179 9.15506 6.90119 9.15434 7.42561C9.155 7.95003 9.05205 8.46941 8.85139 8.95392C8.65074 9.43843 8.35633 9.87852 7.9851 10.2489L8.79159 11.0554ZM6.52154 2.34938C6.61817 2.39593 6.69972 2.46878 6.75683 2.55958C6.81393 2.65038 6.84427 2.75544 6.84437 2.8627V11.9885C6.84421 12.0959 6.81378 12.201 6.75657 12.2918C6.69936 12.3826 6.61769 12.4554 6.52094 12.5019C6.4242 12.5483 6.3163 12.5665 6.20966 12.5544C6.10302 12.5423 6.00196 12.5004 5.9181 12.4334L3.22256 10.2774H0.570364C0.419094 10.2774 0.27402 10.2173 0.167056 10.1104C0.0600917 10.0034 0 9.85834 0 9.70707V5.14416C0 4.99289 0.0600917 4.84781 0.167056 4.74085C0.27402 4.63389 0.419094 4.57379 0.570364 4.57379H3.22256L5.9181 2.41782C6.00202 2.35073 6.10319 2.30871 6.20995 2.2966C6.31671 2.28449 6.42472 2.30279 6.52154 2.34938Z"
+              fill="#eb8e21"
+              class=""
+            ></path></svg
+          >Please check if the sound is on.
+        </h2>
+      </div>
+    </main>
+    <style>
+      .promo-banner {
+        background: var(
+          --gradient,
+          linear-gradient(270deg, #64416d 0%, #d55c7e 100%)
+        );
+        padding: 20px 0;
+        text-align: center;
+        margin-bottom: 60px;
+      }
+
+      .promo-banner h2 {
+        font-size: 36px;
+        max-width: 25ch;
+        margin: 0 auto;
+      }
+
+      @media (max-width: 900px) {
+        .promo-banner h2 {
+          font-size: 26px;
+        }
+      }
+    </style>
+    <div data-delay>
+      <div class="promo-banner">
+        <div class="container">
+          <h2>Claim Your Discounted Presgera Below For Huge Savings</h2>
+        </div>
+
+        <div class="g-arrow"></div>
+      </div>
+
+      <!-- <section class="area-kits" id="kits">
+        <div class="container center-flex">
+          <ul class="kit-options">
+            <li class="kit-option">
+              <a
+                href="https://buygoods.com/secure/checkout.html?account_id=11038&product_codename=pre2&redirect=aHR0cHM6Ly9iZy5lbi5wcmVzZ2VyYS5jb20vdXBzZWxsLw=="
+              >
+                <div class="header">
+                  <strong>2 Bottles</strong>
+                  <span>60-Day Supply</span>
+                </div>
+
+                <div class="main">
+                  <img src="assets/img/2.png" alt="2 Bottles" />
+                  <span class="regular">Regular Price: <s>$179</s></span>
+                  <strong class="price">$79 <small>/Bottle</small></strong>
+                  <span class="total">Total: <s>$179</s> $158</span>
+                  <span class="frete">+ $9.99 Shipping & Handling</span>
+                </div>
+
+                <div class="footer">
+                  <button class="button">Add to Cart</button>
+                  <img
+                    src="assets/img/cards.png"
+                    alt="Credit Cards"
+                    class="bandeiras"
+                  />
+                </div>
+              </a>
+            </li>
+
+            <li class="kit-option best-option">
+              <a
+                href="https://buygoods.com/secure/checkout.html?account_id=11038&product_codename=pre6&redirect=aHR0cHM6Ly9iZy5lbi5wcmVzZ2VyYS5jb20vdXBzZWxsLw=="
+              >
+                <div class="header">
+                  <strong>6 Bottles</strong>
+                  <span>180-Day Supply</span>
+                  <div class="badge">Best Deal</div>
+                </div>
+
+                <div class="main">
+                  <img src="assets/img/Mockup-Presgera-6.png" alt="6 Bottles" />
+                  <span class="regular">Regular Price: <s>$1.074</s></span>
+                  <strong class="price">$49 <small>/Bottle</small></strong>
+                  <span class="total">Total: <s>$1.074</s> $294</span>
+                  <span class="frete">Free Shipping & Handling</span>
+                  <strong style="color: #ec8e21; font-size: 20px"
+                    >+2 FREE eBooks!</strong
+                  >
+                </div>
+
+                <div class="footer">
+                  <button class="button main-button">Add to Cart</button>
+                  <img
+                    src="assets/img/cards.png"
+                    alt="Credit Cards"
+                    class="bandeiras"
+                  />
+                </div>
+              </a>
+            </li>
+
+            <li class="kit-option k3">
+              <a
+                href="https://buygoods.com/secure/checkout.html?account_id=11038&product_codename=pre3&redirect=aHR0cHM6Ly9iZy5lbi5wcmVzZ2VyYS5jb20vdXBzZWxsLw=="
+              >
+                <div class="header">
+                  <strong>3 Bottles</strong>
+                  <span>90-Day Supply</span>
+                </div>
+
+                <div class="main">
+                  <img src="assets/img/Mockup-Presgera-3.png" alt="3 Bottles" />
+                  <span class="regular">Regular Price: <s>$537</s></span>
+                  <strong class="price">$69 <small>/Bottle</small></strong>
+                  <span class="total">Total: <s>$537</s> $207 </span>
+                  <span class="frete">Free Shipping & Handling</span>
+                  <strong style="color: #ec8e21; font-size: 20px"
+                    >+2 FREE eBooks!</strong
+                  >
+                </div>
+
+                <div class="footer">
+                  <button class="button">Add to Cart</button>
+                  <img
+                    src="assets/img/cards.png"
+                    alt="Credit Cards"
+                    class="bandeiras"
+                  />
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section> -->
+      <section class="area-kits" id="kits">
+        <div class="container center-flex">
+          <ul class="kit-options">
+            <li class="kit-option k1">
+              <a
+                href="https://buygoods.com/secure/checkout.html?account_id=11038&product_codename=pre2&redirect=aHR0cHM6Ly9iZy5lbi5wcmVzZ2VyYS5jb20vdXBzZWxsLw=="
+              >
+                <div class="header" style="background-color: #626f72">
+                  BASIC
+                </div>
+
+                <div class="main">
+                  <strong>2 BOTTLES</strong>
+                  <span class="days">60 Day Supply</span>
+                  <div class="area-img">
+                    <img src="assets/img/2.png" alt="2 Bottles" />
+                  </div>
+                </div>
+
+                <div class="footer">
+                  <div class="price"><strong>$79</strong> / bottle</div>
+                  <button class="button">
+                    <img src="assets/img/button.webp" alt="Add To Cart" />
+                  </button>
+                  <img
+                    src="assets/img/cards.png"
+                    alt="Credit Cards"
+                    class="bandeiras"
+                  />
+
+                  <div class="valores">
+                    <s>$179</s>
+                    <span>$158</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li class="kit-option best-option">
+              <a
+                href="https://buygoods.com/secure/checkout.html?account_id=11038&product_codename=pre6&redirect=aHR0cHM6Ly9iZy5lbi5wcmVzZ2VyYS5jb20vdXBzZWxsLw=="
+              >
+                <div class="header" style="background-color: #64416d">
+                  MOST POPULAR
+                </div>
+
+                <div class="main">
+                  <strong>6 BOTTLES</strong>
+                  <span class="days">180 Day Supply</span>
+                  <div class="area-img">
+                    <img src="assets/img/6.png" alt="6 Bottles" />
+                    <div class="save">
+                      <b
+                        >Save <br />
+                        $780</b
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="footer">
+                  <div class="price"><strong>$49</strong> / bottle</div>
+
+                  <ul>
+                    <li style="color: #64416d">
+                      <span style="background-color: #64416d">✓</span>2 FREE
+                      BONUSES!
+                    </li>
+                    <li style="color: #ac2824">
+                      <span style="background-color: #ac2824">✓</span>FREE
+                      SHIPPING!
+                    </li>
+                  </ul>
+                  <button class="button">
+                    <img src="assets/img/button.webp" alt="Add To Cart" /><img
+                      src="assets/img/cursor.png"
+                      alt=""
+                      class="cursor"
+                    />
+                  </button>
+
+                  <img
+                    src="assets/img/cards.png"
+                    alt="Credit Cards"
+                    class="bandeiras"
+                  />
+
+                  <div class="valores">
+                    <s>$1074</s>
+                    <span>$294</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li class="kit-option k3">
+              <a
+                href="https://buygoods.com/secure/checkout.html?account_id=11038&product_codename=pre3&redirect=aHR0cHM6Ly9iZy5lbi5wcmVzZ2VyYS5jb20vdXBzZWxsLw=="
+              >
+                <div class="header" style="background-color: #71515a">
+                  BUNDLE
+                </div>
+
+                <div class="main">
+                  <strong>3 BOTTLES</strong>
+                  <span class="days">90 Day Supply</span>
+                  <div class="area-img">
+                    <img src="assets/img/3.png" alt="3 Bottles" />
+                    <div class="save">
+                      <b
+                        >Save <br />
+                        $330</b
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="footer">
+                  <div class="price"><strong>$69</strong> / bottle</div>
+
+                  <ul>
+                    <li style="color: #64416d">
+                      <span style="background-color: #64416d">✓</span>2 FREE
+                      BONUSES!
+                    </li>
+                  </ul>
+                  <button class="button">
+                    <img src="assets/img/button.webp" alt="Add To Cart" />
+                  </button>
+                  <img
+                    src="assets/img/cards.png"
+                    alt="Credit Cards"
+                    class="bandeiras"
+                  />
+
+                  <div class="valores">
+                    <s>$537</s>
+                    <span>$207</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+
+          <div class="infos">
+            <strong>Our customers say</strong>
+            <div class="aval">
+              <img src="assets/img/star.svg" alt="" />
+              <strong>4.92/5</strong>
+            </div>
+
+            <div class="rw">based on <strong>39,208</strong> reviews</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="guarantee pd">
+        <div class="container">
+          <img src="assets/img/selo.png" alt="Guarantee" class="selo" />
+
+          <div class="content">
+            <h2 class="title">
+              100% SATISFACTION <br />
+              GUARANTEED
+            </h2>
+
+            <p>
+              Presgera is backed by a 100% money-back guarantee for 180 days
+              from the date of your original purchase. ORDER NOW
+            </p>
+
+            <div class="area-btn">
+              <a href="#kits" class="btn">Order Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq pd">
+        <div class="container">
+          <h2 class="title">Frequently Asked Questions</h2>
+
+          <div class="accordion">
+            <div class="item">
+              <div class="header">
+                <p>What is Presgera?</p>
+              </div>
+              <div class="body">
+                <p>
+                  Presgera is a dietary supplement specifically developed to
+                  relieve neuropathy-related discomfort. It is based on
+                  extensive research and contains a combination of
+                  scientifically proven ingredients that target the "Trinity of
+                  Nerve Discomfort". It offers relief from discomfort, promotes
+                  nerve function, and combats inflammation. The formula includes
+                  the main ingredient Palmitoylethanolamide (PEA), which is
+                  known to support a healthy inflammatory response and alleviate
+                  mild discomfort.
+                </p>
+
+                <img src="assets/img/supplemnt-img.png" alt="Presgera" />
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="header">
+                <p>When will my order arrive?</p>
+              </div>
+              <div class="body">
+                <p>
+                  A: Starting this month, inventory is available, and when you
+                  order now, you will immediately receive a confirmation email.
+                  Rest assured, we are working hard to get your order to you as
+                  quickly as possible!
+                </p>
+                <p>
+                  We ship your order directly to your home or office with a
+                  premium shipping service, and you will receive it within 7 to
+                  14 business days after placing your order. The products are
+                  shipped from Florida, USA, and we will send you a shipping
+                  notification with a tracking number once your order is
+                  shipped, so you can track it all the way to your doorstep.
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="header">
+                <p>What is the refund policy?</p>
+              </div>
+              <div class="body">
+                <p>A: Your order is backed by a money-back guarantee.</p>
+                <p>
+                  <b>180-Day Risk-Free Guarantee</b>
+                </p>
+                <p>
+                  This is a 180-day, 100% money-back guarantee that takes all
+                  the risk off your shoulders and makes it easy for you to try
+                  Presgera for yourself right now.
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="header">
+                <p>Is it safe to buy online?</p>
+              </div>
+              <div class="body">
+                <p>
+                  A: Online shopping is absolutely one of the safest ways to
+                  shop! SSL certificates authenticate our identity and encrypt
+                  the information visitors enter on our website. This prevents
+                  thieves from "eavesdropping" on any data between our website
+                  and another computer. When an SSL certificate is installed,
+                  you can be sure that the information you send is secure and
+                  cannot be viewed by cybercriminals.
+                </p>
+                <p>
+                  Our SSL certificate allows the browser and web server to
+                  establish a secure, encrypted connection. The SSL "handshake"
+                  process that establishes the secure session occurs discreetly
+                  in the background without interrupting your shopping
+                  experience. A padlock icon in the browser status bar and the
+                  "https://" prefix in the URL are the only visible signs of an
+                  ongoing secure session.
+                </p>
+                <p>
+                  The Presgera checkout page is secured with a Symantec Class 3
+                  EV SSL Web Server Certificate. Transactions on the website are
+                  protected with up to 256-bit Secure Sockets Layer encryption.
+                  Encryption means that all transmitted data is scrambled, so it
+                  is meaningless to the recipient in case of an error.
+                </p>
+                <p>
+                  We use a third-party credit card processor that meets the
+                  strictest international data security standards to handle our
+                  credit card payments, so no one ever has access to your credit
+                  card information. We do NOT store your credit card number in
+                  our records.
+                </p>
+                <p>
+                  At Presgera Labs, we understand that you are trusting us with
+                  your financial security when shopping online. We have done
+                  everything possible to ensure that your information is secure
+                  from start to finish, and we thank you for your trust in us.
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="header">
+                <p>
+                  How does Presgera differ from everything I’ve tried so far?
+                </p>
+              </div>
+              <div class="body">
+                <p>
+                  Presgera stands out because of its unique formulation that
+                  combines PEA with seven other powerful ingredients, including
+                  healing herbs like Corydalis Lutea, Passionflower, Marshmallow
+                  Root, and California Poppy Seeds, as well as compounds like
+                  Acetylcarnitine (ALCAR), Coenzyme Q10, and Turmeric. This
+                  combination not only alleviates discomfort caused by
+                  neuropathy but also promotes nerve regeneration and protection
+                  while providing additional benefits such as reducing anxiety,
+                  improving mood, and supporting sleep.
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="header">
+                <p>How does Presgera compare to other similar supplements?</p>
+              </div>
+              <div class="body">
+                <p>
+                  Presgera differs from other similar supplements through its
+                  comprehensive approach and strong scientific backing. While
+                  many supplements only focus on temporary relief of discomfort,
+                  Presgera aims to combat the underlying causes of neuropathy,
+                  reduce inflammation, promote nerve regeneration, and improve
+                  overall nerve health. The effectiveness of Presgera's
+                  ingredients is supported by clinical studies and user reports,
+                  which highlight significant improvements in a short amount of
+                  time.
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="header">
+                <p>Will it work for me?</p>
+              </div>
+              <div class="body">
+                <p>
+                  A: Everyone is different, but Presgera® has been remarkably
+                  effective for almost everyone who has tried it. It contains
+                  clinically tested ingredients with plenty of supporting
+                  evidence. However, if for any reason you are not satisfied
+                  with Presgera, remember that you can always return it and get
+                  100% of your money back.
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="header">
+                <p>How do I take it?</p>
+              </div>
+              <div class="body">
+                <p>
+                  A: Taking Presgera couldn’t be easier. Simply take 2 capsules
+                  either in the morning or at night. Each capsule is small, easy
+                  to swallow, and starts working right away.
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="header">
+                <p>How quickly does it work?</p>
+              </div>
+              <div class="body">
+                <p>
+                  A: You will quickly notice benefits related to mood, sleep,
+                  and energy.
+                </p>
+                <p>
+                  As for nutrient support and nerve function, this doesn’t
+                  happen overnight. Our formula uses the most bioavailable form
+                  of each ingredient, so the ingredients are absorbed into your
+                  system faster than other supplements.
+                </p>
+                <p>
+                  Some customers have seen results within a week, while most
+                  take 3-6 months to achieve the best results.
+                </p>
+                <p>
+                  Every case is different – and several factors can influence
+                  the time it takes to see improvements. We strongly recommend
+                  taking Presgera® for at least 4-6 months to maximize your
+                  chances of success.
+                </p>
+                <p>
+                  We also understand that despite the high success rate, our
+                  formula doesn’t work for everyone. For this reason, we offer a
+                  180-day guarantee on your last order. If Presgera® doesn’t
+                  work for you, you have a whole year to request a refund (minus
+                  shipping and handling) for your last order.
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="header">
+                <p>Are there any side effects?</p>
+              </div>
+              <div class="body">
+                <p>
+                  A: All ingredients in Presgera® are safe, and no significant
+                  side effects have been reported. However, since everyone is
+                  different, be sure to consult your doctor to determine if
+                  Presgera® is right for you.
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="header">
+                <p>Can I take Presgera along with my current medications?</p>
+              </div>
+              <div class="body">
+                <p>
+                  A: The ingredients in Presgera® are generally safe to take in
+                  combination with prescription medications, but we recommend
+                  consulting your doctor or pharmacist first. Since some
+                  prescription medications may temporarily affect the body's
+                  ability to absorb nutrients, we suggest taking Presgera®
+                  either 30 minutes before or after taking your medications.
+                  This ensures better absorption of the ingredients in Presgera®
+                  into your system.
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="header">
+                <p>How long is the product good for?</p>
+              </div>
+              <div class="body">
+                <p>
+                  A: Each bottle is stamped with a "manufacture date" (DOM). We
+                  recommend using the product within 24 months from the DOM.
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="header">
+                <p>Will I be enrolled in a subscription or auto-delivery?</p>
+              </div>
+              <div class="body">
+                <p>
+                  A: No, we only offer a one-time purchase to avoid confusion.
+                  If you like the product, we trust that you will return on your
+                  own.
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="header">
+                <p>Where is the product made?</p>
+              </div>
+              <div class="body">
+                <p>
+                  A: We proudly make each component locally in Tampa, FL. We do
+                  not outsource any of our customer service positions abroad and
+                  proudly support the local economy.
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="header">
+                <p>
+                  What are the total ingredients in our formula designed to
+                  relieve neuropathy discomfort?
+                </p>
+              </div>
+              <div class="body">
+                <p><b>Inactive Ingredients Overview</b></p>
+                <ul>
+                  <li>
+                    <b>Hypromellose (Plant Capsule):</b> This plant-based
+                    capsule material ensures fast dissolution for quick release
+                    and absorption of active ingredients, and is suitable for
+                    vegetarians and health-conscious consumers.
+                  </li>
+                  <li>
+                    <b>Microcrystalline Cellulose:</b> Serves as an excellent
+                    filler and texture agent, helps stabilize the formulation,
+                    and ensures uniform dosage in each capsule for consistent
+                    delivery and effectiveness.
+                  </li>
+                  <li>
+                    <b>Magnesium Stearate:</b> Used as a flow agent and improves
+                    the manufacturing process by preventing ingredients from
+                    sticking to production equipment, ensuring the quality and
+                    safety of the capsules.
+                  </li>
+                  <li>
+                    <b>Stearic Acid:</b> This fatty acid serves both as an
+                    emulsifier and lubricant, improving ingredient mixing and
+                    contributing to the smooth consistency of the capsules.
+                  </li>
+                  <li>
+                    <b>Silicon Dioxide:</b> Often used as a separating agent, it
+                    prevents ingredients from clumping, ensuring that each dose
+                    contains the correct amount of active ingredients.
+                  </li>
+                </ul>
+
+                <p>
+                  <b>Note:</b> These ingredients are essential for the overall
+                  stability and quality of our formula for neuropathy relief.
+                  They do not directly impact treatment but support the
+                  effective delivery and reliability of the active components.
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="header">
+                <p>How does the guarantee work again?</p>
+              </div>
+              <div class="body">
+                <p>
+                  A: Once you have placed your Presgera® order, you have 180
+                  days to try it for yourself. If for any reason during this
+                  time you are not 100% satisfied, simply email
+                  support@presgera.com and you will get your full refund – no
+                  hassles and no questions. You can find this email on our
+                  website, in your confirmation email, and in every Presgera®
+                  shipment you receive.
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="header">
+                <p>What if I have more questions?</p>
+              </div>
+              <div class="body">
+                <p>
+                  A: If you have questions during your experience, you can
+                  always reach out to our U.S.-based support team at our support
+                  email support@presgera.com or by phone at +1 (720) 924-4193.
+                  Both our email and phone number are always available on our
+                  website.
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="header">
+                <p>How do I get started?</p>
+              </div>
+              <div class="body">
+                <p>
+                  A: All you need to do is click the "Order Now" button to place
+                  your order. Remember, since you're on this page, you'll
+                  receive our "Invest More, Save More" discount, meaning the
+                  more you buy, the more you save. Once you’ve placed your
+                  order, you should receive it at your doorstep within 5-7 days
+                  depending on your location.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="area-btn">
+            <a href="#kits" class="btn">Order Now</a>
+            <span>180-Day Money-Back Guarantee</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="faixa promo-banner">
+        <div class="container">
+          <h2 class="title">EVERY 6 BOTTLES ORDER GETS FREE SHIPPING TOO!</h2>
+          <h3 class="desc" style="margin-bottom: 0">
+            *97% Of Customers Order 6 Bottles (Our Recommended Option)
+          </h3>
+        </div>
+
+        <div class="g-arrow"></div>
+      </section>
+
+      <section class="area-kits">
+        <div class="container center-flex">
+          <ul class="kit-options">
+            <li class="kit-option k1">
+              <a
+                href="https://buygoods.com/secure/checkout.html?account_id=11038&product_codename=pre2&redirect=aHR0cHM6Ly9iZy5lbi5wcmVzZ2VyYS5jb20vdXBzZWxsLw=="
+              >
+                <div class="header" style="background-color: #626f72">
+                  BASIC
+                </div>
+
+                <div class="main">
+                  <strong>2 BOTTLES</strong>
+                  <span class="days">60 Day Supply</span>
+                  <div class="area-img">
+                    <img src="assets/img/2.png" alt="2 Bottles" />
+                  </div>
+                </div>
+
+                <div class="footer">
+                  <div class="price"><strong>$79</strong> / bottle</div>
+                  <button class="button">
+                    <img src="assets/img/button.webp" alt="Add To Cart" />
+                  </button>
+                  <img
+                    src="assets/img/cards.png"
+                    alt="Credit Cards"
+                    class="bandeiras"
+                  />
+
+                  <div class="valores">
+                    <s>$179</s>
+                    <span>$158</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li class="kit-option best-option">
+              <a
+                href="https://buygoods.com/secure/checkout.html?account_id=11038&product_codename=pre6&redirect=aHR0cHM6Ly9iZy5lbi5wcmVzZ2VyYS5jb20vdXBzZWxsLw=="
+              >
+                <div class="header" style="background-color: #64416d">
+                  MOST POPULAR
+                </div>
+
+                <div class="main">
+                  <strong>6 BOTTLES</strong>
+                  <span class="days">180 Day Supply</span>
+                  <div class="area-img">
+                    <img src="assets/img/6.png" alt="6 Bottles" />
+                    <div class="save">
+                      <b
+                        >Save <br />
+                        $780</b
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="footer">
+                  <div class="price"><strong>$49</strong> / bottle</div>
+
+                  <ul>
+                    <li style="color: #64416d">
+                      <span style="background-color: #64416d">✓</span>2 FREE
+                      BONUSES!
+                    </li>
+                    <li style="color: #ac2824">
+                      <span style="background-color: #ac2824">✓</span>FREE
+                      SHIPPING!
+                    </li>
+                  </ul>
+                  <button class="button">
+                    <img src="assets/img/button.webp" alt="Add To Cart" /><img
+                      src="assets/img/cursor.png"
+                      alt=""
+                      class="cursor"
+                    />
+                  </button>
+
+                  <img
+                    src="assets/img/cards.png"
+                    alt="Credit Cards"
+                    class="bandeiras"
+                  />
+
+                  <div class="valores">
+                    <s>$1074</s>
+                    <span>$294</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li class="kit-option k3">
+              <a
+                href="https://buygoods.com/secure/checkout.html?account_id=11038&product_codename=pre3&redirect=aHR0cHM6Ly9iZy5lbi5wcmVzZ2VyYS5jb20vdXBzZWxsLw=="
+              >
+                <div class="header" style="background-color: #71515a">
+                  BUNDLE
+                </div>
+
+                <div class="main">
+                  <strong>3 BOTTLES</strong>
+                  <span class="days">90 Day Supply</span>
+                  <div class="area-img">
+                    <img src="assets/img/3.png" alt="3 Bottles" />
+                    <div class="save">
+                      <b
+                        >Save <br />
+                        $330</b
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="footer">
+                  <div class="price"><strong>$69</strong> / bottle</div>
+
+                  <ul>
+                    <li style="color: #64416d">
+                      <span style="background-color: #64416d">✓</span>2 FREE
+                      BONUSES!
+                    </li>
+                  </ul>
+                  <button class="button">
+                    <img src="assets/img/button.webp" alt="Add To Cart" />
+                  </button>
+                  <img
+                    src="assets/img/cards.png"
+                    alt="Credit Cards"
+                    class="bandeiras"
+                  />
+
+                  <div class="valores">
+                    <s>$537</s>
+                    <span>$207</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+
+          <div class="infos">
+            <strong>Our customers say</strong>
+            <div class="aval">
+              <img src="assets/img/star.svg" alt="" />
+              <strong>4.92/5</strong>
+            </div>
+
+            <div class="rw">based on <strong>39,208</strong> reviews</div>
+          </div>
+        </div>
+      </section>
+
+      <div class="pd container center rotulo" style="padding-top: 20px">
+        <img src="assets/img/rotulo.png" alt="Presgera" />
+      </div>
+    </div>
+
+    <footer>
+      <div class="data_footer">
+        <div class="container">
+          <nav>
+            <a href="terms.html">Terms & Conditions</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+
+          <div class="disclaimer">
+            <p style="font-size: 11px">
+              These statements have not been evaluated by the Food and Drug
+              Administration. This product is not intended to diagnose, treat,
+              cure, or prevent any disease.. The information provided on this
+              site is for informational purposes only and is not intended as a
+              substitute for advice from your physician or other health care
+              professional or any information contained on or in any product
+              label or packaging. You should not use the information on this
+              site for diagnosis or treatment of any health problem or for
+              prescription of any medication or other treatment. You should
+              consult with a healthcare professional before starting any diet,
+              exercise or supplementation program, before taking any medication,
+              or if you have or suspect you might have a health problem.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="copy">
+        <span
+          >Copyright <span class="current-year"></span> All Rights
+          Reserved.</span
+        >
+      </div>
+      <style>
+        .main.container {
+          max-width: 100%;
+        }
+      </style>
+      <span id="disclaimer"></span>
+      <script src="https://display.buygoods.com/v1/disclaimer?id=disclaimer&account_id=9343"></script>
+    </footer>
+    <style>
+      span#disclaimer {
+        background: #000;
+        width: 100% !important;
+        display: block;
+        padding: 10px;
+      }
+    </style>
+
+    <span id="disclaimer"></span>
+    <script src="https://display.buygoods.com/v1/disclaimer?id=disclaimer&account_id=11038"></script>
+
+    <script>
+      function local() {
+        var request = new XMLHttpRequest();
+        request.open("GET", "https://wtfismyip.com/json", true);
+
+        request.onload = function () {
+          if (this.status >= 200 && this.status < 400) {
+            var data = JSON.parse(this.response);
+            let output = data.YourFuckingLocation.replace(/\,.+/g, "$'");
+            document.getElementById("cidade").innerHTML = output;
+          } else {
+          }
+        };
+        request.onerror = function () {};
+        request.send();
+      }
+      local();
+      document
+        .querySelectorAll(".accordion .item .header")
+        .forEach((header) => {
+          header.addEventListener("click", function () {
+            const item = this.parentNode;
+            if (item.classList.contains("active")) {
+              item.classList.remove("active");
+            } else {
+              document
+                .querySelectorAll(".accordion .item")
+                .forEach((i) => i.classList.remove("active"));
+              item.classList.add("active");
+            }
+          });
+        });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        var currentYear = new Date().getFullYear();
+        var yearSpan = document.querySelector(".current-year");
+        yearSpan.textContent = currentYear;
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const HAS_SHOWN_KEY = "hasShownSections"; // Chave para o localStorage
+
+        // FunÃ§Ã£o para mostrar todas as seÃ§Ãµes ocultas
+        function showHiddenSections() {
+          console.log("Exibindo as seÃ§Ãµes ocultas");
+          const hiddenSections = document.querySelectorAll("[data-delay]");
+          hiddenSections.forEach((section) => {
+            section.style.display = "flex";
+            section.style.flexDirection = "column";
+          });
+          localStorage.setItem(HAS_SHOWN_KEY, "true"); // Marcar que as seÃ§Ãµes foram mostradas
+        }
+
+        // FunÃ§Ã£o para observar mudanÃ§as na classe e estilo de um elemento
+        function observeClassAndStyleChanges(element) {
+          const observer = new MutationObserver((mutations) => {
+            mutations.forEach((mutation) => {
+              if (
+                mutation.attributeName === "class" ||
+                mutation.attributeName === "style"
+              ) {
+                const display = window.getComputedStyle(element).display;
+                const isHidden = element.classList.contains("smartplayer-hide");
+                console.log(
+                  `MudanÃ§a detectada: display = ${display}, isHidden = ${isHidden}`
+                );
+                const hiddenSections =
+                  document.querySelectorAll("[data-delay]");
+                hiddenSections.forEach((section) => {
+                  section.style.display = "block";
+                });
+                localStorage.setItem(HAS_SHOWN_KEY, "true");
+                if (display !== "none" && !isHidden) {
+                  showHiddenSections();
+                  observer.disconnect(); // Parar de observar apÃ³s exibir as seÃ§Ãµes
+                }
+              }
+            });
+          });
+
+          observer.observe(element, { attributes: true });
+        }
+
+        // FunÃ§Ã£o para encontrar e observar o contÃªiner do botÃ£o
+        function findAndObserveButtonContainer() {
+          const delayButtonContainer = document.querySelector(
+            '[id^="callaction_"][class*="smartplayer-call-action"]'
+          );
+          if (delayButtonContainer) {
+            console.log("ContÃªiner do botÃ£o encontrado");
+            observeClassAndStyleChanges(delayButtonContainer);
+            clearInterval(findButtonInterval); // Parar de verificar apÃ³s encontrar o contÃªiner
+          } else {
+            console.log(
+              "ContÃªiner do botÃ£o nÃ£o encontrado, tentando novamente..."
+            );
+          }
+        }
+
+        // Verificar a presenÃ§a do contÃªiner do botÃ£o a cada 500ms
+        const findButtonInterval = setInterval(
+          findAndObserveButtonContainer,
+          500
+        );
+
+        // Verificar se o conteÃºdo jÃ¡ foi mostrado anteriormente
+        const hasShownSections = localStorage.getItem(HAS_SHOWN_KEY) === "true";
+        if (hasShownSections) {
+          showHiddenSections();
+        }
+      });
+      function getQueryParams() {
+        return new URLSearchParams(window.location.search);
+      }
+
+      // Função para combinar os parâmetros do href original com os parâmetros da URL atual
+      function combineParams(originalHref, currentParams) {
+        let [baseUrl, originalParamsString] = originalHref.split("?");
+        let originalParams = new URLSearchParams(originalParamsString || "");
+
+        // Adiciona os parâmetros atuais da URL aos parâmetros originais
+        currentParams.forEach((value, key) => {
+          // Verifica se o parâmetro já existe para evitar duplicação
+          if (!originalParams.has(key)) {
+            originalParams.append(key, value);
+          }
+        });
+
+        // Monta a URL final
+        let finalParamsString = originalParams.toString();
+        return finalParamsString ? `${baseUrl}?${finalParamsString}` : baseUrl;
+      }
+
+      // Adiciona os parâmetros da URL aos links de checkout
+      document.addEventListener("DOMContentLoaded", function () {
+        let buttons = document.querySelectorAll(".area-kits a");
+        let currentParams = getQueryParams();
+
+        buttons.forEach(function (button) {
+          let originalHref = button.getAttribute("href");
+          button.setAttribute(
+            "href",
+            combineParams(originalHref, currentParams)
+          );
+        });
+      });
+    </script>
+  </body>
+</html>
