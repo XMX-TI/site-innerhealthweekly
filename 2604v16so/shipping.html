@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShapeON — Shipping Policy</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        /* ShapeON palette */
+        --clr-text: #66726b;
+        --clr-primary: #7ed957;
+        --clr-light: #fff;
+        --clr-light-2: #fbfff7;
+        --clr-darck-2: #1e3d2b;
+        --clr-darck: #1f4d3a;
+        --clr-black: #0e0d11;
+
+        --clr-border: rgba(102, 114, 107, 0.25);
+        --clr-note: rgba(126, 217, 87, 0.18);
+        --clr-warn: rgba(31, 61, 43, 0.85);
+      }
+
+      html,
+      body {
+        font-family: "Roboto", Arial, sans-serif;
+        color: var(--clr-text);
+      }
+
+      .banner-grad {
+        background: linear-gradient(
+          135deg,
+          var(--clr-darck) 0%,
+          var(--clr-darck-2) 55%,
+          var(--clr-primary) 120%
+        );
+      }
+
+      .prose p,
+      .prose li {
+        margin-bottom: 1rem;
+        line-height: 1.65;
+      }
+
+      .bullet li {
+        list-style: disc;
+        margin-left: 1.25rem;
+      }
+    </style>
+  </head>
+
+  <body class="bg-[var(--clr-light)]">
+    <!-- Banner -->
+    <header class="banner-grad text-[var(--clr-light)]">
+      <div class="max-w-4xl mx-auto px-6 py-10 md:py-14">
+        <p class="uppercase text-xs tracking-widest opacity-90">
+          ShapeON Weight Loss Support
+        </p>
+        <h1 class="text-3xl md:text-5xl font-bold">Shipping Policy</h1>
+        <p class="mt-3 text-base md:text-lg opacity-90">
+          Effective: <span id="effectiveDate"></span>
+        </p>
+      </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-10 md:py-14">
+      <article class="prose max-w-none">
+        <h2 class="text-2xl font-bold text-[var(--clr-darck)] mb-4">
+          Processing Time
+        </h2>
+        <p>
+          Please allow <b>1–2 business days</b> for order processing before
+          shipment. During holidays, processing may experience delays.
+        </p>
+        <p>
+          If invalid or incomplete information is provided (payment or address),
+          processing may be delayed an additional <b>3–5 business days</b>.
+        </p>
+        <p>
+          (Note: U.S. addresses are verified through USPS. If you are unsure of
+          your shipping address, please verify at usps.com. This note does not
+          apply to international orders.)
+        </p>
+        <p>
+          We ship <b>Monday–Friday</b>, excluding weekends and U.S.
+          public/postal holidays.
+        </p>
+        <p style="color: var(--clr-warn)">
+          ShapeON is not responsible for carrier-guaranteed delivery windows.
+          Our 1–2 business day processing time is separate from carrier transit
+          time.
+        </p>
+
+        <h2 class="text-2xl font-bold text-[var(--clr-darck)] mb-4">
+          Domestic Delivery Time — Standard Shipping
+        </h2>
+        <p>
+          Time in transit depends on the shipping method selected. Transit time
+          does not include weekends or holidays. All delivery times are
+          estimates. ShapeON is not responsible for delays due to events beyond
+          our control, including shortages of materials, labor strikes,
+          transportation failures, or acts of nature.
+        </p>
+
+        <h2 class="text-2xl font-bold text-[var(--clr-darck)] mb-4">
+          Refused, Lost, Stolen, or Delayed Packages
+        </h2>
+        <p>
+          If a package is refused, applicable shipping/handling fees may be
+          deducted from any refund and processing will begin only after the
+          package is returned and reviewed by our team.
+        </p>
+        <p>
+          We primarily use national carriers (e.g., USPS/UPS). Replacement of
+          <b>lost or stolen</b> packages is not guaranteed. For delays or issues
+          with delivery, please contact
+          <b
+            ><a
+              href="contact.html"
+              style="text-decoration: underline !important"
+              >this link to our Contact Page</a
+            ></b
+          >. ShapeON is not responsible for packages lost, stolen, or delayed by
+          the carrier.
+        </p>
+        <p>
+          (Note: On rare occasions, international shipments can take 4–6 weeks;
+          in severe cases, 8–12 weeks. ShapeON is not responsible for delays
+          caused by destination-country customs clearance. Shipping to certain
+          countries may require additional fees due to geography.)
+        </p>
+
+        <h2 class="text-2xl font-bold text-[var(--clr-darck)] mb-4">
+          Cancel Order
+        </h2>
+        <p>
+          Orders are sent to fulfillment shortly after placement. If you contact
+          us within <b>24 hours</b> of purchase, we will attempt to cancel. If
+          the order has been processed or shipped, we cannot cancel it. You may
+          refuse delivery and immediately notify
+          <b
+            ><a
+              href="contact.html"
+              style="text-decoration: underline !important"
+              >this link to our Contact Page</a
+            ></b
+          >, or return the package with a valid tracking number and notify us so
+          we can verify. Refunds are issued after the package is received and
+          reviewed.
+        </p>
+
+        <h2 class="text-2xl font-bold text-[var(--clr-darck)] mb-4">
+          Wrong Address Disclaimer
+        </h2>
+        <p>
+          Please ensure your address is correct at checkout. Due to strict
+          shipping schedules, address changes are not guaranteed. ShapeON is not
+          responsible for orders shipped to an address entered incorrectly by
+          the buyer. If the order has shipped, we must wait to see if it is
+          returned to us; if returned, we can re-ship to a corrected address
+          (additional postage may apply) or issue a refund.
+        </p>
+
+        <h2 class="text-2xl font-bold text-[var(--clr-darck)] mb-4">
+          Delivery of Items
+        </h2>
+        <p>
+          If tracking states “Delivered” to your address, ShapeON does not issue
+          refunds for non-receipt claims. Please contact the designated carrier
+          (e.g., USPS/UPS) for assistance in locating the package.
+        </p>
+
+        <h2 class="text-2xl font-bold text-[var(--clr-darck)] mb-4">Returns</h2>
+        <p>
+          To obtain a <b>full refund</b> under our
+          <b>60-day satisfaction guarantee</b>, you must return all bottles
+          included in your order (empty, full, or partially full — including any
+          bonus/free bottles) within <b>sixty (60) days</b> of the original
+          purchase date. Include a note inside the package with:
+        </p>
+        <ul class="bullet">
+          <li>Your Order ID (found on your receipt)</li>
+          <li>
+            Your full name and the full shipping address where the order was
+            received
+          </li>
+          <li>Your email address and phone number</li>
+          <li>The original packing slip (if available)</li>
+        </ul>
+        <p>
+          <b>Note:</b> Failure to return all bottles may result in a partial
+          refund.
+        </p>
+        <p>
+          You are responsible for return shipping. Once our fulfillment center
+          receives and verifies your return, a refund will be issued to the
+          original method of payment. Depending on your bank, it may take
+          <b>3–5 business days</b> to appear on your statement.
+        </p>
+        <p>Ship returns via a trackable service to:</p>
+        <p
+          class="rounded p-4"
+          style="
+            background: var(--clr-note);
+            border: 1px solid var(--clr-border);
+          "
+        >
+          <em>
+            ShapeON<br />
+            19655 E 35th Drive, Suite 100<br />
+            Aurora, CO 80011 — USA
+          </em>
+        </p>
+        <p>
+          You must provide a tracking number for your return. Failure to provide
+          tracking can delay review.
+        </p>
+        <p>
+          By ordering through our website, you are bound to the
+          <a
+            class="underline"
+            style="color: var(--clr-darck)"
+            href="/terms-of-service.html"
+            >Terms of Service</a
+          >.
+        </p>
+        <p>
+          Questions?
+          <b
+            ><a
+              href="contact.html"
+              style="text-decoration: underline !important"
+              >Contact us here</a
+            ></b
+          >.
+        </p>
+      </article>
+    </main>
+
+    <footer class="border-t" style="border-color: var(--clr-border)">
+      <div
+        class="max-w-4xl mx-auto px-6 py-8 text-center text-sm"
+        style="color: rgba(102, 114, 107, 0.9)"
+      >
+        <p>
+          The information on this website has not been evaluated by the Food and
+          Drug Administration. These products are not intended to diagnose,
+          treat, cure, or prevent any disease.
+        </p>
+        <p class="mt-2">
+          © <span id="y"></span> ShapeON. All Rights Reserved. 19655 E 35th
+          Drive, Suite 100, Aurora, CO 80011
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      // Footer year
+      document.getElementById("y").textContent = new Date().getFullYear();
+
+      // Effective Date (Month, Year)
+      const now = new Date();
+      const month = now.toLocaleString("en-US", { month: "long" });
+      document.getElementById("effectiveDate").textContent =
+        month + ", " + now.getFullYear();
+    </script>
+  </body>
+</html>
