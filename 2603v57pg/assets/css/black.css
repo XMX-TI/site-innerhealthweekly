@@ -1,0 +1,101 @@
+.faixaX,
+.promo-banner,
+.g-arrow {
+  background: #000 !important;
+  position: relative;
+}
+
+.fita-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  display: flex;
+  white-space: nowrap;
+}
+
+.fita {
+  display: inline-block;
+  width: 100%;
+  min-width: 100vw;
+
+  animation: fitaSlide 15s linear infinite;
+}
+
+.area-kits .container ul a .header {
+  position: relative;
+  background: #000;
+}
+
+@keyframes fitaSlide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.faixaX svg *,
+.shipping svg * {
+  fill: #000;
+}
+
+.area-kits .container ul .best-option .header {
+  background: #ffd902 !important;
+  color: #000;
+}
+
+.shipping .container .title strong {
+  color: #ffd902;
+}
+
+.shipping {
+  background: #000;
+  margin-top: 0;
+}
+
+.guarantee {
+  margin-bottom: 80px !important;
+}
+.area-kits .container ul a .header {
+  height: 71px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+.area-kits .container ul a .header::before {
+  content: url(../../assets/img/faixa.svg);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.area-kits .container ul a {
+  border-color: #000;
+}
+.area-kits .container ul .best-option .price,
+.area-kits .container ul .best-option .price strong {
+  color: #000 !important;
+}
+.area-kits .container ul .best-option a {
+  border-color: #ffd902;
+}
+
+.area-kits .container ul .best-option .header::before {
+  content: url(../../assets/img/faixabest.svg);
+}
+
+@media (max-width: 900px) {
+  .fita {
+    height: auto;
+    object-fit: cover;
+  }
+  .guarantee {
+    margin-bottom: 40px !important;
+  }
+  .fita-container {
+    height: 40px;
+  }
+}
