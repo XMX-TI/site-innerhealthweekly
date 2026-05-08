@@ -112,18 +112,45 @@
       }
     </style>
 
-    <script>!function(i,n){i._plt=i._plt||(n&&n.timeOrigin?n.timeOrigin+n.now():Date.now())}(window,performance);</script>
-    <link rel="preload" href="https://scripts.converteai.net/bff5868f-b8e9-4bb4-af45-52d9b7681a6e/players/699f350e85a22216bd6a957d/v4/player.js" as="script">
-    <link rel="preload" href="https://scripts.converteai.net/lib/js/smartplayer-wc/v4/smartplayer.js" as="script">
-    <link rel="preload" href="https://cdn.converteai.net/bff5868f-b8e9-4bb4-af45-52d9b7681a6e/699f32d5f5e86dda40b7af67/main.m3u8" as="fetch">
-    <link rel="dns-prefetch" href="https://cdn.converteai.net">
-    <link rel="dns-prefetch" href="https://scripts.converteai.net">
-    <link rel="dns-prefetch" href="https://images.converteai.net">
-    <link rel="dns-prefetch" href="https://api.vturb.com.br">
+    <script>
+      !(function (i, n) {
+        i._plt =
+          i._plt || (n && n.timeOrigin ? n.timeOrigin + n.now() : Date.now());
+      })(window, performance);
+    </script>
+    <link
+      rel="preload"
+      href="https://scripts.converteai.net/bff5868f-b8e9-4bb4-af45-52d9b7681a6e/players/699f350e85a22216bd6a957d/v4/player.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="https://scripts.converteai.net/lib/js/smartplayer-wc/v4/smartplayer.js"
+      as="script"
+    />
+    <link
+      rel="preload"
+      href="https://cdn.converteai.net/bff5868f-b8e9-4bb4-af45-52d9b7681a6e/699f32d5f5e86dda40b7af67/main.m3u8"
+      as="fetch"
+    />
+    <link rel="dns-prefetch" href="https://cdn.converteai.net" />
+    <link rel="dns-prefetch" href="https://scripts.converteai.net" />
+    <link rel="dns-prefetch" href="https://images.converteai.net" />
+    <link rel="dns-prefetch" href="https://api.vturb.com.br" />
   </head>
   <body>
     <main class="container center pd">
-    <vturb-smartplayer id="vid-699f350e85a22216bd6a957d" style="display: block; margin: 0 auto; width: 100%; max-width: 400px;"></vturb-smartplayer> <script type="text/javascript"> var s=document.createElement("script"); s.src="https://scripts.converteai.net/bff5868f-b8e9-4bb4-af45-52d9b7681a6e/players/699f350e85a22216bd6a957d/v4/player.js", s.async=!0,document.head.appendChild(s); </script>
+      <vturb-smartplayer
+        id="vid-699f350e85a22216bd6a957d"
+        style="display: block; margin: 0 auto; width: 100%; max-width: 400px"
+      ></vturb-smartplayer>
+      <script type="text/javascript">
+        var s = document.createElement("script");
+        ((s.src =
+          "https://scripts.converteai.net/bff5868f-b8e9-4bb4-af45-52d9b7681a6e/players/699f350e85a22216bd6a957d/v4/player.js"),
+          (s.async = !0),
+          document.head.appendChild(s));
+      </script>
 
       <h2>Please turn up the volume</h2>
     </main>
@@ -139,7 +166,7 @@
           </div>
           <ul>
             <li class="good">
-              <a href="https://feilaira.mycartpanda.com/checkout/172743522:1">
+              <a href="https://feilaira.mycartpanda.com/checkout/182086007:1">
                 <div class="header">
                   <strong>2 Bottle</strong>
                   <h2>60 Day Supply</h2>
@@ -175,7 +202,7 @@
             </li>
 
             <li class="best">
-              <a href="https://feilaira.mycartpanda.com/checkout/172758457:1">
+              <a href="https://feilaira.mycartpanda.com/checkout/160546285:1">
                 <div class="header">
                   <span>BEST VALUE</span>
                   <strong>6 Bottle</strong>
@@ -213,7 +240,7 @@
             </li>
 
             <li class="great">
-              <a href="https://feilaira.mycartpanda.com/checkout/179993303:1">
+              <a href="https://feilaira.mycartpanda.com/checkout/182086009:1">
                 <div class="header">
                   <strong>3 Bottle</strong>
                   <h2>60 Day Supply</h2>
@@ -629,24 +656,30 @@
     </footer>
 
     <script>
-      var delaySeconds = 2189; 
+      var delaySeconds = 2189;
       var player = document.querySelector("vturb-smartplayer");
 
       player.addEventListener("player:ready", function () {
         player.displayHiddenElements(delaySeconds, ["[data-delay]"], {
-          persist: true
+          persist: true,
         });
 
         // SISTEMA DE VIGILÂNCIA (MutationObserver)
-        const target = document.querySelector('[data-delay]');
+        const target = document.querySelector("[data-delay]");
         const observer = new MutationObserver((mutations) => {
           mutations.forEach((mutation) => {
-            if (mutation.attributeName === 'style' || mutation.attributeName === 'class') {
-              const isVisible = window.getComputedStyle(target).display !== 'none';
+            if (
+              mutation.attributeName === "style" ||
+              mutation.attributeName === "class"
+            ) {
+              const isVisible =
+                window.getComputedStyle(target).display !== "none";
               if (isVisible && !window.scrolledOnce) {
                 window.scrolledOnce = true;
                 setTimeout(() => {
-                  document.getElementById("kits").scrollIntoView({ behavior: "smooth" });
+                  document
+                    .getElementById("kits")
+                    .scrollIntoView({ behavior: "smooth" });
                 }, 300);
               }
             }
